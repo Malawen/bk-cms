@@ -1,0 +1,51 @@
+/**
+ * @template banduthoribas
+ * @url http://bandu-thoribas.de
+ * @version 1
+*/
+
+
+body {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+div {
+  border: solid 0px #FFFFFF;
+}
+
+#header {
+  height: 210px;
+  width: 850px;
+  background-color: #FF0000;
+}
+
+#menu {
+  height:30px;
+  width: 850px;
+  background-color: #00FF00;
+}
+
+a.menu_entry {
+
+}
+
+div.menu_entry {
+  width: auto;
+  float: left;
+  padding-left: 10px;
+}
+
+div.menu_entry:hover {
+
+}
+
+div.menu_entry:active {
+
+}
+
+#content {
+  height: 500px;
+  width: 850px;
+  background-color: #0000FF;
+}

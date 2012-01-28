@@ -1,0 +1,178 @@
+/**
+ * @since r1
+ * @lastchage r4
+*/
+
+body {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+#headline {
+  background-color:#b1c903;
+  height:50px;
+  text-indent:25px;
+  width:814px;
+  margin:0px 0px 0px 150px;
+}
+
+.headline {
+  color: #ffffff;
+  font: bold;
+  font-size: 37px;
+}
+
+#headpic {
+  background-color:black;
+  height:130px;
+  width:814px;
+  margin:0px 0px 0px 150px;
+  background-image: url(./banner/default.jpg);
+}
+
+#mainmenu {
+  background-color:#ffffff;
+  height:30px;
+  text-align: justify;
+  width:814px;
+  margin:0px 0px 0px 153px;
+}
+
+a.mainmenu_entry {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+}
+
+div.mainmenu_entry {
+  width: auto;
+  height: 28px;
+  float: left;
+  padding: 2px 13px 0px 13px;
+}
+
+div.mainmenu_entry:hover {
+  background-color: #b1c903;
+}
+
+div.mainmenu_entry:active {
+  background-color: #7d9823;
+}
+
+#catmenu {
+  background-color:#ffffff;
+  width:125px;
+  float:left;
+  margin:0px 0px 0px 0px;
+  padding-left:3px;
+}
+
+div.catmenu_entry {
+  margin-bottom: 5px;
+}
+
+a.catmenu_entry {
+  font-size: 14px;
+  color: #7d9823;
+  text-decoration: none;
+}
+
+a.catmenu_entry:hover {
+  text-decoration: underline;
+}
+
+a.catmenu_seperator {
+  color: #7d9823;
+  text-decoration: underline;
+  font-style: oblique;
+}
+
+/*div.catmenu_empty {
+  height: 20px;
+  background-color: #00fe0e;
+}*/
+
+#submenu {
+  background-color: #ffffff;
+  height: 30px;
+  width: 814px;
+  bottom: 100px;
+  margin: 0px 0px 0px 150px;
+}
+
+div.submenu_entry {
+  float: left;
+  margin: 0px 10px 0px 0px;
+}
+
+a.submenu_entry {
+  color: #000000;
+  text-decoration: none;
+}
+
+a.submenu_entry:hover {
+  text-decoration: underline;
+}
+
+#bigcontent {
+  background-color:#ffffff;
+  width:964px;
+  margin:0px 0px 0px 0px;
+}
+
+#content {
+    background-color:#ffffff;
+    border: solid #b1c903 1px;
+    width:779px;
+    min-height:300px;
+    height: auto !important;
+    height: 300px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin:0px 0px 0px 150px;
+}
+
+#facettenkreuz {
+    position: relative;
+    bottom: 100px;
+    left: 12px;
+    float: left;
+}
+
+div.cattpl_news {
+  margin-top: 8px;
+}
+
+/*blog*/
+
+div.blog {
+  border: 1px #CFCFCF dotted;
+  padding: 3px;
+  margin-top: 2px;
+}
+
+div.blog_headline {
+  width: 100%;
+}
+
+a.blog_headline {
+  font-size: 20px;
+  font: bold;
+  color: #7d9823;
+}
+
+a.blog_date {
+  float: right;
+  color: #ACACAC;
+  font-size: small;
+}
+
+div.blog_content {
+  clear: right;
+}
+
+a.blog_content {
+  
+}

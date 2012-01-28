@@ -1,0 +1,26 @@
+Changelog - badkoenig Template für bk-CMS
+
+Legende:
++ hinzugefügt
+# geändert
+- entfernt
+
+#############################################################
+
+r2 - ??.??.????
+
+
+
+New:
+
+Move:
+
+Change:
+
+Delete:
+
+
+--------------------------------------------------
+r1
+
+Das erste Release des CMS.

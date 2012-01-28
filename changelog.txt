@@ -1,0 +1,154 @@
+Changelog - bk-CMS
+
+Legende:
++ hinzugefügt
+# geändert
+- entfernt
+
+#############################################################
+
+r5 - ??.??.????
+
+* template-Datei etwas aufgeräumt
+
+* Bug in Header-Plugin beseitigt
+* Header-Plugin wird nur noch geladen wenn ein get-Wert der ID cat übergeben wird
+* Der Funktion logout_link() muss jetzt die CSS-Klasse übergebenwerden
+* die Funktion check_user_password() wurde hinzugefügt um das Passwort auch noch nach dem Loginvorgang überprüfen zu können
+* out_css() und out_js() erstellen nur noch eine Ausgabe wenn ihr Array nicht leer ist
+
+* Änderungen an Admin-Login Design
+* weitere Änderungen an der admin-template.php und der admin.css
+
+* Das Administrationsmenü wurde neu geschrieben.
+* Es ist jetzt Klassenbasierend und kann mehrere Ebenen darstellen.
+* Die an das Menü übergebenen Funktionen können aus der globalen Variable: $adminMenuGet ausgelesen werden.
+* Die erste übergeben Funktion wird als Hauptfunktion gewertet und stellt somit den Content da.
+
+New:
+/bk-func/plugin/menu
+/bk-func/plugin/menu/admin-menu.css
+
+Move:
+/bk-func/plugin/menu.php => /bk-func/plugin/menu/menu.php
+
+Change:
+/bk-user/template/badkoenig/template.php
+
+/bk-func/plugin/header/func.php
+/bk-func/bk-user.php
+/bk-func/bk-template.php
+
+/bk-admin/admin-template.php
+/bk-admin/admin.css
+
+Delete:
+
+--------------------------------------------------
+r4 - 17.06.2011
+
+* jQuery: jQuery wurde den lib's hinzugefügt.
+* Es kann über die php-Funktion jQuery(); in der Template-Datei eingebunden werden.
+* jQuery ist im Administrationsbereich immer verfügbar.
+
+* elRTE: elRTE wurde als ein neue WYSIWYG-Editor zu den lib's hinzugefügt.
+* Er soll den alten Editor "openwysiwys" ersetzen und wurde daher in der Blog- und in der Seiten-php-Datei eingesetzt.
+* Das JS kann über die php-Funktion load_elRTE(); eingebunden werden und benutzt ein div-Tag mit der ID "elrte" zum anzeigen.
+
+New:
+/bk-func/lib/jQuery/images/* -- von jQuery verwendete Graphiken
+/bk-func/lib/jQuery/jQuery.php
+/bk-func/lib/jQuery/jquery-1.5.1.js
+/bk-func/lib/jQuery/jquery-ui-1.8.11.bk.css
+/bk-func/lib/jQuery/jquery-ui-1.8.11.js
+
+/bk-func/lib/elRTE/css/elrte.full.css
+/bk-func/lib/elRTE/css/elrte.min.css
+/bk-func/lib/elRTE/css/elrte-inner.css
+/bk-func/lib/elRTE/images/* -- von elRTE verwendete Graphiken
+/bk-func/lib/elRTE/js/i18n/* -- Languagefiles
+/bk-func/lib/elRTE/js/elrte.full.js
+/bk-func/lib/elRTE/js/elrte.min.js
+/bk-func/lib/elRTE/Changelog
+/bk-func/lib/elRTE/load.php
+
+Move:
+
+Change:
+
+/bk-admin/admin-template.php
+/bk-func/plugin/blog.php
+/bk-func/plugin/page.php
+/bk-func/lib/inc-lib.php
+
+Delete:
+
+
+--------------------------------------------------
+r3 - 01.02.2011
+
+* Plugin Verzeichnis aus bk-setting.php entfernt
+* Beim Upadten einer Seite wird auf leere Übergabewerte geprüft
+* Funktion zur automatischen Url-Ergänzung eingefügt
+* Neue Url-Ergänzung beim einfügen von css-Dateien und js-Dateien hinzugefügt
+
+* Erste Änderungen am Admin-Design
+
+New:
+
+Move:
+
+Change:
+/bk-setting.php
+/bk-func/plugin/page.php
+/bk-func/bk-function.php
+/bk-func/bk-template.php
+
+/bk-admin/admin-template.php
+/bk-admin/admin.css
+
+Delete:
+
+--------------------------------------------------
+r2 - 14.12.2010
+
+* Neues Plugin System (ohne Datenbank)
+* Neues System für Externe Libaries (Kopie des Plugin System! Nur zur besseren Übersicht eingefügt)
+* Wysiwyg-Editor
+* Wysiwyg-Editor in Page und Blog eingefügt
+* Plugins können auch nun auch nur für einen einzigen Übergabewert aufgerüfen werden
+  Bsp: init_plugin("meine_func", 50, "get", "mein_get", "mein_Übergabewert");
+
+New:
+/bk-func/plugin/inc-plugins.php
+/bk-func/lib - Ordner für externe Libaries/Plugins
+/bk-func/lib/inc-lib.php
+/bk-func/lib/openwysiwyg - Wysiwyg-Editor
+/bk-func/lib/openwysiwyg/load.php
+
+Move:
+/bk-plugin -> /bk-func/plugin
+/bk-plugin/adminuser/adminuser.php -> /bk-func/plugin/adminuser.php
+/bk-plugin/blog/blog.php -> /bk-func/plugin/blog.php
+/bk-plugin/cat/cat.php -> /bk-func/plugin/cat.php
+/bk-plugin/header/func.php -> /bk-func/plugin/header/func.php
+/bk-plugin/header/headerswitch.js -> /bk-func/plugin/header/headerswitch.js
+/bk-plugin/menu/menu.php -> /bk-func/plugin/menu.php
+/bk-plugin/page/page.php -> /bk-func/plugin/page.php
+
+Change:
+/index.php
+/bk-func/bk-plugin.php
+/bk-func/plugin/page.php
+/bk-func/plugin/blog.php
+/bk-func/bk-template.php
+/bk-admin/admin-template.php
+/bk-admin/index.php
+/bk-func/plugin/header/func.php
+
+Delete:
+
+--------------------------------------------------
+r1
+
+Das erste Release des CMS.
